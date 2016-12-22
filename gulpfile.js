@@ -1,11 +1,13 @@
 var gulp =require('gulp');
 var jshint = require('gulp-jshint');
-var jsFiles =['*.js','src/**/*.js'];
+var jscs = reqire('gulp-jscs');
 
+var jsFiles = ['*.js','src/**/*.js'];
 gulp.task('style',function(){
-	gulp.src(jsFles)
+	return gulp.src(jsFiles)
 	    .pipe(jshint())
-	    .pipe(jshnt.reporter('jshint-stylish',{
+	    .pipe(jshint.reporter('jshint-stylish',{
 	    	verbose: true
-	    }));
+	    }))
+	    .pipe(jscs());
 });
