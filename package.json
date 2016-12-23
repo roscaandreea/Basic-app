@@ -17,12 +17,7 @@
   },
   "homepage": "https://github.com/roscaandreea/basic-app#readme",
   "dependencies": {
-    "express": "^4.14.0"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-jscs": "^4.0.0",
-    "gulp-jshint": "^2.0.4",
-    "jshint-stylish": "^2.2.1"
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
   }
 }

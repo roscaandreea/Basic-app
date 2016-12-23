@@ -1,11 +1,16 @@
 var express =require('express');
 var app =express();
-var port =5005;
+var port = process.env.PORT|| 5005;
+
 app.use(express.static('public'));
-app.use(express.static('src/views'));
-app.get('/',function(req,res){
-   res.send('Hello everyone!!!');
+
+app.set('views','src/views');
+app.set('view engine','jade');
+
+app.get('/', function(req,res){
+   res.render('index',{list:['a','b','c']});
 });
+
 app.listen(5005,function(err){
    console.log('running server on port '+ port);
 });
