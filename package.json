@@ -18,6 +18,10 @@
   "homepage": "https://github.com/roscaandreea/basic-app#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
     "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
